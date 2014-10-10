@@ -1,0 +1,8 @@
+{
+  "name": "angular-define-wrappper",
+  "version": "0.0.1",
+  "main": "./angular-define-wrapper.js",
+  "dependencies": {
+    "angular": "~1.2.26"
+  }
+}
