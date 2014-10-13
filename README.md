@@ -1,4 +1,4 @@
-angular-define-wrapper
+angular-global-injector
 ======================
 
 Automatically wraps global dependencies into an Angular injectable.
