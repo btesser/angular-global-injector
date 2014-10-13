@@ -1,6 +1,6 @@
 {
   "name": "angular-global-injector",
-  "version": "",
+  "version": "0.0.2",
   "description": "Wraps external modules which support require.js with angular injection",
   "main": "angular-global-injector.js",
   "scripts": {},
