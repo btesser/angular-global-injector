@@ -1,17 +1,20 @@
 {
-  "name": "angular-define-wrapper",
+  "name": "angular-global-injector",
   "version": "",
   "description": "Wraps external modules which support require.js with angular injection",
-  "main": "angular-define-wrapper.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "angular-global-injector.js",
+  "scripts": {},
   "keywords": [
     "angular",
-    "framework",
-    "browser",
-    "cookies",
-    "client-side"
+    "javascript",
+    "dependency",
+    "injection",
+    "require",
+    "define",
+    "requirejs",
+    "angularjs",
+    "global",
+    "library"
   ],
   "author": "Ben Tesser <btesser@gmail.com>",
   "license": "MIT",
