@@ -38,6 +38,7 @@ During my first Angular.js project, however, it became clear that:
 
 I spent some time trying to come up with a solution that accomplished
 a few goals:
+* As few global variables as possible!
 * No editing of third party code.
 * No extra boilerplate angular code for each new dependency
 * Support for bower
