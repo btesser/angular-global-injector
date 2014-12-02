@@ -1,5 +1,6 @@
 angular-global-injector
 ======================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/btesser/angular-global-injector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Automatically wraps global dependencies into an Angular injectable.
 Works for most libraries that support requirejs.  
