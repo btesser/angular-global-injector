@@ -153,6 +153,9 @@
     if (define.forceRemoveGlobals) {
       delete window[parsed.name];
       setTimeout(function() { delete window[parsed.name]; });
+      Object.defineProperty(window, parsed.name, {
+        writable: false
+      });
     }
   }
 
