@@ -83,8 +83,14 @@
       dependencies = name;
       name = undefined;
     } else if (typeof name === 'function') {
+      // Super hacky check for lodash since it is using an anonymous define
       value = name;
       name = value.toString() === LO_DASH_METHOD ? '_' : undefined;
+      dependencies = [];
+    } else if (typeof name === 'object' && name.lab.name === 'd3_lab') {
+      // Super hacky check for d3 since it is using an anonymous define
+      value = name;
+      name = 'd3';
       dependencies = [];
     } else {
       value = dependencies;
