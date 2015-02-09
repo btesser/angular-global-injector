@@ -89,7 +89,7 @@
       dependencies = [];
     } else if (typeof name === 'object' && name.lab.name === 'd3_lab') {
       // Super hacky check for d3 since it is using an anonymous define
-      value = name;
+      value = createGetter(name);
       name = 'd3';
       dependencies = [];
     } else {
@@ -152,6 +152,9 @@
     // Allow globals to be forcefully removed
     if (define.forceRemoveGlobals) {
       delete window[parsed.name];
+      Object.defineProperty(window, parsed.name, {
+        writable: false
+      });
     }
   }
 
