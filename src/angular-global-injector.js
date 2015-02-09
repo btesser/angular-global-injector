@@ -151,7 +151,7 @@
     
     // Allow globals to be forcefully removed
     if (define.forceRemoveGlobals) {
-      delete window[parsed.name];
+      setTimeout(function() { delete window[parsed.name]; });
     }
   }
 
