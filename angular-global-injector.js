@@ -142,14 +142,19 @@
     // Run dependency getter method passing in the dependencies
     defined = parsed.value.apply(parsed.value, resolved);
     createWrappedDependency(parsed.name, defined);
+    
+    // Allow globals to be forcefully removed
+    if (define.forceRemoveGlobals) {
+      delete window[parsed.name];
+    }
   }
 
   // Amd is looked for by some scripts
   define.amd = {};
 
   define.type = 'Angular Global Injector';
-  define.version = '0.0.1';
-
+  define.version = '0.0.2';
+  define.forceRemoveGlobals = false;
   window.define = define;
 
   // As jQuery must be included before angular we add it to the registry
